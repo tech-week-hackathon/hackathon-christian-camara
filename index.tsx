@@ -61,7 +61,7 @@ const Home: NextPage = () => {
       <CardanoWallet />
       {connected && (
         <>
-          <h1>Get Wallet Assets</h1>
+          <h1>Votar propuesta</h1>
             <button
               type="button"
               onClick={() => votar("Yes")}
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                 backgroundColor: loading ? "orange" : "grey",
               }}
             >
-              Abstencion
+              Votar Neutral
             </button>
         </>
       )}
