@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         const dRep = await wallet.getDRep();
         const dRepId = dRep.dRepIDCip105;
         
-        const anchorUrl = 'https://github.com/tech-week-hackathon/hackathon-christian-camara/blob/main/plutus.json';
+        const anchorUrl = 'https://security.machost.co/plutus.json';
         const anchorHash = await getMeshJsonHash(anchorUrl);
         
         // get utxo to pay for the registration
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           <h1>Registro DREP</h1>
             <button
               type="button"
-              onClick={() => votosi()}
+              onClick={() => registrar()}
               disabled={loading}
               style={{
                 margin: "8px",
